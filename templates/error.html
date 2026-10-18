@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %}Página no encontrada{% endblock %}
+
+{% block contenido %}
+<section class="tarjeta">
+  <h1 class="titulo">404</h1>
+  <p class="mensaje">La página que buscas no existe.</p>
+  <p class="mensaje"><a href="{{ url_for('inicio') }}">Volver al menú principal</a></p>
+</section>
+{% endblock %}
